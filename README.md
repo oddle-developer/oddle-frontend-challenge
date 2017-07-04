@@ -3,8 +3,8 @@
 ## Instruction
 
 1. Allocate around 4 hours on this project and fork this repository
-2. Create a single page application that consumes github search API (e.g. https://api.github.com/search/users?q=tom)
-3. Host your production ready application on Heroku/Now and send us the link
+2. Create a single page application that consumes [Github API](https://developer.github.com/v3/) (See [Requirements](https://github.com/oddle-developer/oddle-frontend-challenge#requirements) for more details)
+3. Host your production ready application on [Heroku](http://heroku.com)/[Now](https://zeit.co/now) and send us the link
 4. Create a pull request to this repository
  
 ## Requirements
@@ -20,8 +20,9 @@
 - The code should be production ready (__HINT:__ Google’s PageSpeed Tool)
  
 ## Bonus point
-- Use AWS instead of Heroku/Now
+- Use [AWS](https://aws.amazon.com) instead of [Heroku](http://heroku.com)/[Now](https://zeit.co/now)
 - Support IE10 and/or Android native browser (Chrome 30.0)
+- Use one of the React routing library
 - Support server-side rendering and caching
-- Use Webpack
+- Use [Webpack](https://github.com/webpack/webpack)
 - Nice and intuitive UI
