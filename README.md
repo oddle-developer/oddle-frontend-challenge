@@ -2,10 +2,10 @@
 
 ## Instruction
 
-1. Allocate around 4 hours on this project and fork this repository
+1. Allocate around 4 hours on this project and clone this repository
 2. Create a single page application that consumes [Github API](https://developer.github.com/v3/) (See [Requirements](https://github.com/oddle-developer/oddle-frontend-challenge#requirements) for more details)
-3. Host your production ready application on [Heroku](http://heroku.com)/[Now](https://zeit.co/now) and send us the link
-4. Create a pull request to this repository
+3. Host your production ready application on [Heroku](http://heroku.com)/[Now](https://zeit.co/now)
+4. Send us the links to your Github repository and the deployed application
  
 ## Requirements
 
