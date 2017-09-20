@@ -6,7 +6,7 @@
 3. Host your production ready application on [Heroku](http://heroku.com) or [Now](https://zeit.co/now)
 4. Push your new repository in your Github account
 5. Send us the links to your Github repository and the deployed application
-6. Bonus points are not mandatory but we really appreciate if you are willing to spend more time to finish those tasks
+6. While completing all bonus points are not mandatory but it is expected to complete some of them since the core requirements should be finished within 4 hours. We really appreciate if you are willing to spend more time to finish those tasks
  
 ## Requirements
 - There is a search bar to let the user search by username (login name)
