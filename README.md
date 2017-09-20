@@ -1,11 +1,12 @@
 # Frontend challenge
 
 ## Instruction
-1. Allocate around 4 hours on this project and clone this repository _(Spending more time is okay but we believe that 4 hours is reasonable to complete all requirements)_
+1. Allocate around 4 hours on this project _(Spending more time is okay but we believe that 4 hours is reasonable to complete all requirements and some bonus points)_
 2. Create a web application that consumes [Github API](https://developer.github.com/v3/) and follow the [requirements](https://github.com/oddle-developer/oddle-frontend-challenge#requirements)
 3. Host your production ready application on [Heroku](http://heroku.com) or [Now](https://zeit.co/now)
-4. Send us the links to your Github repository and the deployed application
-5. Bonus points are not mandatory but we really appreciate if you are willing to spend more time to finish those tasks
+4. Push your new repository in your Github account
+5. Send us the links to your Github repository and the deployed application
+6. Bonus points are not mandatory but we really appreciate if you are willing to spend more time to finish those tasks
  
 ## Requirements
 - There is a search bar to let the user search by username (login name)
