@@ -1,7 +1,7 @@
 # Frontend challenge
 
 ## Instruction
-1. Allocate around 4 hours on this project _(Spending more time is okay but we believe that 4 hours is reasonable to complete all requirements and some bonus points)_
+1. Allocate around 4 days on this project _(Spending more time is okay but we believe that 4 hours is reasonable to complete all requirements and some bonus points)_
 2. Create a web application that consumes [Github API](https://developer.github.com/v3/) and follow the [requirements](https://github.com/oddle-developer/oddle-frontend-challenge#requirements)
 3. Host your production ready application on [Heroku](http://heroku.com) or [Now](https://zeit.co/now)
 4. Push your new repository in your Github account
@@ -34,3 +34,9 @@
 - The search input does the searching as you type (See google search as an example)
 - There is animated transition between pages
 - The application supports theming and can easily be switched between themes
+
+## Submission Steps
+- Submit your assignment by creating a repository on your Github account
+- Code. Commit and Push as many times as you want, only the last Pull Request will be graded
+- Create a Pull Request in your private repo and invite us as reviewer
+- Add https://github.com/oddle-developer as collaborator for your repo and add oddle-developer as reviewer to your PR
