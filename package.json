@@ -1,0 +1,40 @@
+{
+  "name": "oddle-frontend-challenge",
+  "version": "1.0.0",
+  "description": "## Instruction 1. Allocate around 4 days on this project _(Spending more time is okay but we believe that 4 hours is reasonable to complete all requirements and some bonus points)_ 2. Create a web application that consumes [Github API](https://developer.github.com/v3/) and follow the [requirements](https://github.com/oddle-developer/oddle-frontend-challenge#requirements) 3. Host your production ready application on [Heroku](http://heroku.com) or [Now](https://zeit.co/now) 4. Push your new repository in your Github account 5. Send us the links to your Github repository and the deployed application 6. While completing all bonus points are not mandatory but it is expected to complete some of them since the core requirements should be finished within 4 hours 7. We really appreciate if you are willing to spend more time to finish all those bonus tasks",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open 'Firefox' --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Femchengdu/oddle-frontend-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Femchengdu/oddle-frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/Femchengdu/oddle-frontend-challenge#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.25.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
