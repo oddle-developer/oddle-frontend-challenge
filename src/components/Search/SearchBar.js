@@ -1,24 +1,32 @@
 import React from "react";
+import { connect } from "react-redux";
+import { setSearchTerm } from "../../redux/actions/searchActions";
 import { clone, isEmpty } from "lodash";
 
-const SearchBar = () => {
+const SearchBar = ({ searchTerm, setSearchTerm }) => {
   const trimEmpty = (event) => {
     const value = clone(event.target.value);
     if (!isEmpty(value.trim())) {
-      return setTerm(value);
+      setSearchTerm(value);
+    } else {
+      if (searchTerm !== "") {
+        console.log("the value is zero, reset!!", searchTerm);
+        setSearchTerm("");
+      }
     }
   };
   return (
     <>
-      <label for="basic-url">Search by login name :</label>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon3">
-          https://example.com/users/
+      <label htmlFor="basic-url">Search by login name :</label>
+      <div className="input-group">
+        <span className="input-group-addon" id="basic-addon3">
+          https://api.github.com/users/
         </span>
         <input
           onChange={trimEmpty}
+          value={searchTerm}
           type="text"
-          class="form-control"
+          className="form-control"
           id="basic-url"
           aria-describedby="basic-addon3"
         />
@@ -27,4 +35,12 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+const mapStateToProps = ({ searchTerm }) => ({
+  searchTerm,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  setSearchTerm: (searchTerm) => dispatch(setSearchTerm(searchTerm)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
