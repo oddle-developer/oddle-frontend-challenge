@@ -5,7 +5,7 @@ const LoadingComponent = () => {
   return (
     <>
       <div className="loading-container">
-        <div class="lds-hourglass"></div>
+        <div className="lds-hourglass"></div>
       </div>
     </>
   );
