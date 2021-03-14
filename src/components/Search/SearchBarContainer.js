@@ -1,26 +1,33 @@
 import React from "react";
-
-import useSearchTerm from "../../hooks/useSearchTerm";
+import { connect } from "react-redux";
+import useGithubSearch from "../../hooks/useGithubSearch";
 import ErrrorComponent from "../Error/ErrorComponent";
 import LoadingComponent from "../Loading/LoadingComponent";
 import SearchBar from "./SearchBar";
 import SearchResults from "./SearchResults";
 
-const SearchBarContainer = ({ githubUsers, loading, error }) => {
+const SearchBarContainer = ({ loading, error }) => {
+  useGithubSearch();
+  console.log(
+    "The loading state is :",
+    "loading :",
+    loading,
+    "errror :",
+    error
+  );
   return (
     <>
       <SearchBar />
       {error && <ErrrorComponent />}
       {loading && <LoadingComponent />}
-      {githubUsers && <SearchResults />}
+      {/* {githubUser && <SearchResults />} */}
     </>
   );
 };
 
-const mapStateToProps = ({ cartItems, loading, error }) => ({
-  cartItems,
+const mapStateToProps = ({ loading, error }) => ({
   loading,
   error,
 });
 
-export default SearchBarContainer;
+export default connect(mapStateToProps)(SearchBarContainer);
