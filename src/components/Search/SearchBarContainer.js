@@ -6,28 +6,22 @@ import LoadingComponent from "../Loading/LoadingComponent";
 import SearchBar from "./SearchBar";
 import SearchResults from "./SearchResults";
 
-const SearchBarContainer = ({ loading, error }) => {
+const SearchBarContainer = ({ loading, error, user }) => {
   useGithubSearch();
-  console.log(
-    "The loading state is :",
-    "loading :",
-    loading,
-    "errror :",
-    error
-  );
   return (
     <>
       <SearchBar />
       {error && <ErrrorComponent />}
       {loading && <LoadingComponent />}
-      {/* {githubUser && <SearchResults />} */}
+      {"login" in user && <SearchResults />}
     </>
   );
 };
 
-const mapStateToProps = ({ loading, error }) => ({
+const mapStateToProps = ({ user, loading, error }) => ({
   loading,
   error,
+  user,
 });
 
 export default connect(mapStateToProps)(SearchBarContainer);
