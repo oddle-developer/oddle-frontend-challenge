@@ -21,4 +21,7 @@ module.exports = {
       //filename: "./index.html" path to dist output
     }),
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };
