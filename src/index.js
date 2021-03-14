@@ -1,11 +1,13 @@
+import { Provider } from "react-redux";
+import store from "./store";
 import "./style.scss";
-import React, { useState } from "react";
+import App from "./components/App";
+import React from "react";
 import { render } from "react-dom";
 
-const App = () => {
-  const [state, setState] = useState("Rdev {^_^}/");
-
-  return <button onClick={() => setState("React works!!")}>{state}</button>;
-};
-
-render(<App />, document.getElementById("root"));
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("root")
+);
