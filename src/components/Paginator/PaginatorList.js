@@ -1,17 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-import LoadingComponent from "../Loading/LoadingComponent";
+
 import useGetRepos from "../../hooks/useGetRepos";
 import Paginator from "./Paginator";
-const PaginatorList = ({ lists, loading, pagination }) => {
+const PaginatorList = ({ lists, pagination }) => {
   useGetRepos();
   let { topicId } = useParams();
-
-  if (loading) {
-    return <LoadingComponent />;
-  }
-
   const { currentPage, itemsPerPage } = pagination;
 
   // Paginator Logic
