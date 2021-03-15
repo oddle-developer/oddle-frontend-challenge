@@ -1,27 +1,19 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import { connect } from "react-redux";
-
-import useGetRepos from "../../hooks/useGetRepos";
 import Paginator from "./Paginator";
-const PaginatorList = ({ lists, pagination }) => {
-  useGetRepos();
-  let { topicId } = useParams();
-  const { currentPage, itemsPerPage } = pagination;
+import PaginatorListItem from "./PaginatorListItem";
 
+const PaginatorList = ({ lists, pagination, use }) => {
+  const { currentPage, itemsPerPage } = pagination;
   // Paginator Logic
   const lastItemIndex = currentPage * itemsPerPage;
   const firstItemIndex = lastItemIndex - itemsPerPage;
   const currentListSlice = lists.slice(firstItemIndex, lastItemIndex);
   return (
     <>
-      <h3 className="text-primary mb-3">Viewing : {topicId} </h3>
-
       <ul className="list-group mb-4">
         {currentListSlice.map((item) => (
-          <li key={item.id} className="list-group-item">
-            {item.name}
-          </li>
+          <PaginatorListItem key={item.id} use={use} item={item} />
         ))}
       </ul>
       <Paginator />
@@ -29,9 +21,7 @@ const PaginatorList = ({ lists, pagination }) => {
   );
 };
 
-const mapStateToProps = ({ repos, loading, pagination }) => ({
-  loading,
-  lists: null || repos,
+const mapStateToProps = ({ pagination }) => ({
   pagination,
 });
 
