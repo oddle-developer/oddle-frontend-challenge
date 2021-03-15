@@ -10,17 +10,36 @@ const SearchResults = ({ user }) => {
   let match = useRouteMatch();
   return (
     <div className="container">
-      <img src={user.avatar_url} className="search-avatar" alt="..." />
-      <div>{user.login}</div>
-      <div>
-        <Link to={`${match.url}/repos`}>Public repos :{user.public_repos}</Link>
+      <div className="container">
+        <div className="row align-middle margin10">
+          <div class="col-xs-6">
+            <div className="well">
+              <img src={user.avatar_url} className="search-avatar" alt="..." />
+              <div>{user.login}</div>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div className="well">
+              <div>
+                <Link to={`${match.url}/repos`}>
+                  Public repos :{user.public_repos}
+                </Link>
+              </div>
+              <div>
+                <Link to={`${match.url}/followers`}>
+                  Followers :{user.followers}
+                </Link>
+              </div>
+              <div>
+                <Link to={`${match.url}/following`}>
+                  Following :{user.following}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <Link to={`${match.url}/followers`}>Followers :{user.followers}</Link>
-      </div>
-      <div>
-        <Link to={`${match.url}/following`}>Following :{user.following}</Link>
-      </div>
+
       <hr />
       {/**Mode display below */}
       <Switch>
