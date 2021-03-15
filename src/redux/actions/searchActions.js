@@ -21,8 +21,6 @@ const fetchAUser = (history) => {
       } else {
         const res = await axios.get(githubUserUrl + `${searchTerm}`);
 
-        console.log("The search term to fetch is :", res);
-
         const { data: user } = res;
         dispatch({ type: types.LOADING_SUCCESS });
         dispatch({ type: types.SET_SEARCH_USER, user });
