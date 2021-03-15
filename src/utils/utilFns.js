@@ -1,4 +1,4 @@
-import { user, followers, updateUser } from "./data";
+import { user, followers, updateUser, repos } from "./data";
 
 const mockUserResponse = () => {
   return new Promise((resolve, reject) => {
@@ -39,4 +39,23 @@ const mockUpdateUserResponse = () => {
   });
 };
 
-export { mockUserResponse, mockFollowersResponse, mockUpdateUserResponse };
+const mockReposResponse = () => {
+  return new Promise((resolve, reject) => {
+    try {
+      setTimeout(() => {
+        console.log("data length :", repos.length);
+        resolve({ data: repos });
+      }, 400);
+    } catch (error) {
+      console.log("tha error :", error);
+      reject({ message: error.message });
+    }
+  });
+};
+
+export {
+  mockUserResponse,
+  mockFollowersResponse,
+  mockUpdateUserResponse,
+  mockReposResponse,
+};
