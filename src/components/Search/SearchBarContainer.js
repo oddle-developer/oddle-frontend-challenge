@@ -10,7 +10,7 @@ const SearchBarContainer = ({ loading, error, user }) => {
   useGithubSearch();
   return (
     <>
-      <SearchBar />
+      {!("login" in user) && <SearchBar />}
       {error && <ErrrorComponent />}
       {loading && <LoadingComponent />}
       {"login" in user && <SearchResults />}
