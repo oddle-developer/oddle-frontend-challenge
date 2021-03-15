@@ -10,7 +10,7 @@ const setSearchTerm = (term) => {
   };
 };
 
-const fetchAUser = () => {
+const fetchAUser = (history) => {
   return async (dispatch, getState) => {
     const { searchTerm } = getState();
     dispatch({ type: types.FETCH_USER_PENDING });
@@ -28,6 +28,7 @@ const fetchAUser = () => {
         const { data: user } = res;
         dispatch({ type: types.FETCH_USER_SUCCESS });
         dispatch({ type: types.SET_SEARCH_USER, user });
+        history.push(`/user/${user.login}`);
       }
     } catch (error) {
       const { message } = error;
