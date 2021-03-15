@@ -29,7 +29,11 @@ const PaginatorListItem = ({ use, item, updateUser }) => {
           }}
           to={`/user/${item.login}`}
         >
-          <img src={item.avatar_url} className="item-avatar" alt="..." />
+          <img
+            src={item.avatar_url}
+            className="item-avatar avatar-r-margin"
+            alt="..."
+          />
           {item.login}
         </Link>
       </li>
@@ -44,7 +48,11 @@ const PaginatorListItem = ({ use, item, updateUser }) => {
           }}
           to={`/user/${item.login}`}
         >
-          <img src={item.avatar_url} className="item-avatar" alt="..." />
+          <img
+            src={item.avatar_url}
+            className="item-avatar avatar-r-margin"
+            alt="..."
+          />
           {item.login}
         </Link>
       </li>
