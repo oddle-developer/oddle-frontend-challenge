@@ -51,9 +51,8 @@ const Paginator = ({ setCurrentPage, pagination, list }) => {
   );
 };
 
-const mapStateToProps = ({ pagination, repos }) => ({
+const mapStateToProps = ({ pagination }) => ({
   pagination,
-  list: repos,
 });
 
 const mapDispatchToProps = (dispatch) => ({
