@@ -1,7 +1,6 @@
 import axios from "axios";
 import * as types from "../constants/actionTypes";
 import { githubUserUrl } from "../../config/appConfig";
-import { mockUpdateUserResponse } from "../../utils/utilFns";
 
 export const updateUser = (username) => {
   return async (dispatch, getState) => {
@@ -11,10 +10,7 @@ export const updateUser = (username) => {
       if (user.login !== username) {
         dispatch({ type: types.LOADING_PENDING });
 
-        //const res = await axios.get(githubUserUrl + `${searchTerm}`);
-
-        const res = await mockUpdateUserResponse();
-        console.log("The search term to fetch is :", res);
+        const res = await axios.get(githubUserUrl + `${username}`);
 
         const { data: user } = res;
         dispatch({ type: types.LOADING_SUCCESS });
