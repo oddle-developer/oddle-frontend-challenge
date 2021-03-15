@@ -8,11 +8,9 @@ const fetchRepos = () => {
     dispatch({ type: types.LOADING_PENDING });
     try {
       const res = await axios.get(githubUserUrl + `${user.login}` + "/repos");
-
-      //const res = await mockReposResponse();
-      console.log("The search term to fetch is :", res);
       const { data: repos } = res;
       dispatch({ type: types.LOADING_SUCCESS });
+      dispatch({ type: types.CLEAR_PAGINATION });
       dispatch({ type: types.SET_USER_REPOS, repos });
     } catch (error) {
       const { message } = error;

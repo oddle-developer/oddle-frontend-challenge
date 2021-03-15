@@ -13,6 +13,7 @@ const fetchFollowers = () => {
 
       const { data: followers } = res;
       dispatch({ type: types.LOADING_SUCCESS });
+      dispatch({ type: types.CLEAR_PAGINATION });
       dispatch({ type: types.SET_USER_FOLLOWERS, followers });
     } catch (error) {
       const { message } = error;
