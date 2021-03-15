@@ -1,7 +1,6 @@
 import axios from "axios";
 import * as types from "../constants/actionTypes";
 import { githubUserUrl } from "../../config/appConfig";
-import { mockUserResponse } from "../../utils/utilFns";
 
 const setSearchTerm = (term) => {
   return {
@@ -20,9 +19,8 @@ const fetchAUser = (history) => {
         console.log("The search is an empty string what to do ? :", searchTerm);
         dispatch({ type: types.LOADING_SUCCESS });
       } else {
-        //const res = await axios.get(githubUserUrl + `${searchTerm}`);
+        const res = await axios.get(githubUserUrl + `${searchTerm}`);
 
-        const res = await mockUserResponse();
         console.log("The search term to fetch is :", res);
 
         const { data: user } = res;
