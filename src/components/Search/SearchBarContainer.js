@@ -4,24 +4,21 @@ import useGithubSearch from "../../hooks/useGithubSearch";
 import ErrrorComponent from "../Error/ErrorComponent";
 import LoadingComponent from "../Loading/LoadingComponent";
 import SearchBar from "./SearchBar";
-import SearchResults from "./SearchResults";
 
-const SearchBarContainer = ({ loading, error, user }) => {
+const SearchBarContainer = ({ loading, error }) => {
   useGithubSearch();
   return (
     <>
-      {!("login" in user) && <SearchBar />}
+      <SearchBar />
       {error && <ErrrorComponent />}
       {loading && <LoadingComponent />}
-      {"login" in user && <SearchResults />}
     </>
   );
 };
 
-const mapStateToProps = ({ user, loading, error }) => ({
+const mapStateToProps = ({ loading, error }) => ({
   loading,
   error,
-  user,
 });
 
 export default connect(mapStateToProps)(SearchBarContainer);
