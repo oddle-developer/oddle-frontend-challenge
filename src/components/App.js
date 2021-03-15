@@ -7,9 +7,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/user/:username">
-            <SearchResults />
-          </Route>
+          <Route path="/user/:username" component={SearchResults} />
           <Route path="/">
             <SearchBarContainer />
           </Route>
