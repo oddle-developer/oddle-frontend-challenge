@@ -13,6 +13,10 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: ["file-loader"],
+      },
     ],
   },
   plugins: [
