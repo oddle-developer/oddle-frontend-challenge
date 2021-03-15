@@ -44,12 +44,12 @@ This application is created to search on github by username and display the publ
 
 #### TODO
 
-- Server side rendering
-- Deploy on AWS
-- SEO optimization
-- Code splitting
-- Themeing
-- Reuseable URL
+- Server side rendering.
+- Deploy on AWS.
+- SEO optimization.
+- Code splitting.
+- Themeing.
+- Reuseable URL.
 
   ![demo-gif](https://media.giphy.com/media/mLjA6hHGk3CPlK5g2v/giphy.gif)
 
