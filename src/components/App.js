@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchBarContainer from "./Search/SearchBarContainer";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-      <SearchBarContainer />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/">
+            <SearchBarContainer />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </>
   );
 };
