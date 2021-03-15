@@ -16,7 +16,6 @@ const Followers = ({ followers, loading }) => {
       {followers.length > 0 && (
         <PaginatorList use="followers" lists={followers} />
       )}
-      ;
     </>
   );
 };

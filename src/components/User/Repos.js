@@ -11,7 +11,7 @@ const Repos = ({ repos, loading }) => {
     <>
       <h3 className="text-primary mb-3">Viewing {username}&apos;s repos :</h3>
       {loading && <LoadingComponent />}
-      {repos.length > 0 && <PaginatorList use="repos" lists={repos} />};
+      {repos.length > 0 && <PaginatorList use="repos" lists={repos} />}
     </>
   );
 };
