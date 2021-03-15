@@ -6,6 +6,7 @@ import userReducer from "./userReducer";
 import repoReducer from "./reposReducer";
 import followersReducer from "./followersReducer";
 import paginationReducer from "./paginationReducer";
+import followingReducer from "./followingReducer";
 
 //
 const rootReducer = combineReducers({
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   repos: repoReducer,
   pagination: paginationReducer,
   followers: followersReducer,
+  following: followingReducer,
 });
 
 export default rootReducer;
