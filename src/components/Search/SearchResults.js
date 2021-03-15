@@ -1,12 +1,13 @@
 import React from "react";
-import PaginatorList from "../Paginator/PaginatorList";
+import Repos from "../User/Repos";
+import Followers from "../User/Followers";
+import Following from "../User/Follwoing";
 import { connect } from "react-redux";
 import "./search.scss";
 import { useRouteMatch, Switch, Route, Link } from "react-router-dom";
 
 const SearchResults = ({ user }) => {
   let match = useRouteMatch();
-  console.log("The match :", match);
   return (
     <div className="container">
       <img src={user.avatar_url} className="search-avatar" alt="..." />
@@ -23,9 +24,9 @@ const SearchResults = ({ user }) => {
       <hr />
       {/**Mode display below */}
       <Switch>
-        <Route path={`${match.path}/:topicId`}>
-          <PaginatorList />
-        </Route>
+        <Route path={`${match.path}/repos`} component={Repos} />
+        <Route path={`${match.path}/following`} component={Following} />
+        <Route path={`${match.path}/followers`} component={Followers} />
       </Switch>
     </div>
   );
