@@ -9,7 +9,16 @@ const PaginatorListItem = ({ use, item, updateUser }) => {
   let returnItem;
 
   if (use === "repos") {
-    returnItem = <li className="list-group-item">Repo name : {item.name}</li>;
+    returnItem = (
+      <li className="list-group-item">
+        <a target="_blank" href={item.html_url}>
+          {item.full_name}
+          <span className="star-span">
+            {item.stargazers_count} <i className="fa fa-star"></i>
+          </span>
+        </a>
+      </li>
+    );
   } else if (use === "followers") {
     returnItem = (
       <li className="list-group-item">
