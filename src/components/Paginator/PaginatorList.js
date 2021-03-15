@@ -16,7 +16,7 @@ const PaginatorList = ({ lists, pagination, use }) => {
           <PaginatorListItem key={item.id} use={use} item={item} />
         ))}
       </ul>
-      <Paginator />
+      <Paginator list={lists} />
     </>
   );
 };
