@@ -12,13 +12,13 @@ const SearchResults = ({ user }) => {
     <div className="container">
       <div className="container">
         <div className="row align-middle margin10">
-          <div class="col-xs-6">
+          <div className="col-xs-6">
             <div className="well">
               <img src={user.avatar_url} className="search-avatar" alt="..." />
               <div>{user.login}</div>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div className="col-xs-6">
             <div className="well">
               <div>
                 <Link to={`${match.url}/repos`}>
