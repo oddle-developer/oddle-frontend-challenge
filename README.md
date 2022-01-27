@@ -32,7 +32,7 @@ You will build a simple GitHub [search console](https://github.com/search) so th
 ## Design Materials 
 > Feel free to add more designs based on existed layouts & components.
 
-Please create the website following this [design file](https://www.figma.com/file/kt2BetKOPYrbGHhQcHy1SE/Oddle-Fe-Challenge?node-id=636%3A2309) on figma. 
+Please create the website following this [design file](https://www.figma.com/file/kt2BetKOPYrbGHhQcHy1SE/Oddle-Fe-Challenge) on figma. 
 
 Here we are using [MUI](https://mui.com) for UI mock-ups. 
 
