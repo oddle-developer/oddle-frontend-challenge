@@ -72,7 +72,7 @@ Note:
 3. Once ready, create an orphan branch named `submission`. Then create a Pull Request with naming convention `[READY4REVIEW]` in your private repo based on your working branch merging towards `submission`. [reference link](https://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository)
 4. Invite [oddle-developer](https://github.com/oddle-developer) as collaborator & reviewer
 5. Share a public website url deploying the latest version of your application
-6. Reply with following information: Full Name, Email Address, How did you know about this job? 
+6. In your review request description, please add the following information: Full Name, Email Address, How did you know about this job?”
 
 ----
 
