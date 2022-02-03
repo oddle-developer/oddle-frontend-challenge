@@ -82,3 +82,33 @@ Note:
 - GitHub [Search Console](https://github.com/search)
 - GitHub API [docs](https://docs.github.com/en/rest)
 - How to set up an orphan branch: [StackOverflow](https://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository)
+
+## Setup and deployment
+
+### Setup
+To setup and run the project you can follow this steps
+- Install NodeJS on your local machine based on yout Operating System [docs](https://nodejs.org/en/download/)
+- Make sure NodeJS succesfully installed by run this command in yout terminal/console `node -v` it will shows the version when succeed
+- Install Git based on your Operating System [docs](https://git-scm.com/downloads)
+- Make sure Git succesfully installed by run this command in yout terminal/console `git --version` it will shows the version when succeed as well
+- Install PM2, this is NodeJs application to run project at production mode, use `npm install pm2 -g`
+- Make a git clone to this project `git clone https://github.com/azwar/oddle-frontend-challenge.git`
+- Go to project directory `cd oddle-frontend-challenge/`
+- Switch to *submission* branch. Install the dependencies `npm install`, then build the project `npm run build`
+- Run the project with production mode using PM2 `pm2 --name reactjs start npm -- start` in this case we give our PM2 instance name as *reactjs*
+- Open this web app on your machine with port HTTP (80) for example `http://localhost` or `example.com` no need to mention the port number since 80 is the default port HTTP
+
+### Libraries
+- @emotion/react - ^11.7.1
+- @emotion/styled - ^11.6.0
+- @mui/icons-material - ^5.3.1
+- @mui/material - ^5.3.1
+- @reduxjs/toolkit - ^1.7.1
+- next - 12.0.9
+- react - 17.0.2
+- react-dom - 17.0.2
+- redux - ^4.1.2
+- tailwindcss ^3.0.17
+
+### Tools
+- Microsoft VisualStudio Code
