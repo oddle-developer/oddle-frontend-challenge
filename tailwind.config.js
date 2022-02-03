@@ -9,4 +9,5 @@ module.exports = {
     colors: require('tailwindcss/colors'),
   },
   plugins: [],
+  purge: ["./pages/**/*.js", "./components/**/*.js", "./layout/**/*.js"]
 }
