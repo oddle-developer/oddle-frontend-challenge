@@ -112,3 +112,6 @@ To setup and run the project you can follow this steps
 
 ### Tools
 - Microsoft VisualStudio Code
+
+## Demo
+The demo of this project is deployed at `http://159.223.35.53/`
