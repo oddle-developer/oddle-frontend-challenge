@@ -33,18 +33,20 @@ export default function Home() {
   return (
     <BaseLayout title="Search">
       <div className="flex flex-1 justify-center w-full h-full flex-col content-start">
-        <TextField id="outlined-basic" variant="outlined" placeholder="Enter GitHub username, i.e. gaeron"
-          className="w-full p-4" onChange={(e) => setKeyword(e.target.value)}
-          value={keyword}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={() => setKeyword('')}>
-                  <CancelOutlined />
-                </IconButton>
-              </InputAdornment>
-            ),
-          }} />
+        <div className="p-4">
+          <TextField id="outlined-basic" variant="outlined" placeholder="Enter GitHub username, i.e. gaeron"
+            className="w-full" onChange={(e) => setKeyword(e.target.value)}
+            value={keyword}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <IconButton onClick={() => setKeyword('')}>
+                    <CancelOutlined />
+                  </IconButton>
+                </InputAdornment>
+              ),
+            }} />
+        </div>
         {result ? (
           <Box overflow="auto" flex={1} flexDirection="column" display="flex" p={2}>
             {result.items.length > 0 ? (<p className={`text-md mb-4 ${isDarkMode ? 'text-neutral-50' : ''}`}>{result.total_count} GitHub users found</p>) : (<>  </>)}

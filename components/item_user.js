@@ -42,7 +42,7 @@ export default function ItemUser(props) {
   return (
     <Card className="flex flex-row content-start" elevation={3}>
       <div className="flex p-2 w-1/3">
-        <Image alt="user avatar" src={props.avatar_url || "/"} width={64} height={64} 
+        <Image alt="user avatar" src={props.avatar_url || "/"} width={64} height={64}
           objectFit="cover"
           className="cursor-pointer"
           onClick={() => router.push({
@@ -55,16 +55,20 @@ export default function ItemUser(props) {
           <div className={"flex grow-0 text-center text-sm font-light overflow-hidden " + (props.isDarkMode ? 'text-neutral-50' : '')}>
             <b className="font-bold">{props.keyword || ''}</b>{props.login.replace(props.keyword, '')}
           </div>
-          <Typography variant="body1" className="text-xs font-thin" >
-            {(followers || '?') + ' followers'}
+          <Typography variant="body1" >
+            <div className="text-xs font-thin">
+              {(followers || '?') + ' followers'}
+            </div>
           </Typography>
-          <Typography variant="body1" className="text-xs font-thin">
-            {(following || '?') + ' following'}
+          <Typography variant="body1">
+            <div className="text-xs font-thin">
+              {(following || '?') + ' following'}
+            </div>
           </Typography>
         </div>
 
-        <div className="flex grow justify-end w-1/5 ">
-          <IconButton className="h-6 w-6 pr-2"
+        <div className="flex grow justify-end w-1/5 pr-2">
+          <IconButton className="h-6 w-6"
             onClick={() => handleFavotire(props)}>
             {
               isFavorite ? <Favorite className="text-red-700 w-4" /> : <FavoriteBorder className="text-red-700 w-4" />
