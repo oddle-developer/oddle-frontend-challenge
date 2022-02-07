@@ -50,7 +50,7 @@ Make sure you fully understand the requirements before proceeding
 
 1. A default or fallback image will be better.
 2. Search Page will display pagination tab if needed (we will not enforce Liked Page)
-3. Loading, error, and empty state are properly handled
+3. Loading, error, and empty states are properly handled
 
 ---
 
@@ -76,7 +76,9 @@ Make sure you fully understand the requirements before proceeding
 
 ## Submission Steps
 
-1. Submit your assignment by creating a private repository on your GitHub account
+To submit, you are going to create a pull request that contains all the code changes. This pull request points to an empty branch that has oddle-developer as the reviewer and has required information (see step no. 8) in the description. For the detailed process, follow our step-by-step instructions: 
+
+1. Create a private repository on your GitHub account
 2. Make sure you have a *small* initial commit e.g. could be this `README.md` file or any framework templates.
 3. Code, commit and push as many times as you want.
 4. Create a branch named `submission` by checking out at the initial commit and continue your work on your working branch. 
