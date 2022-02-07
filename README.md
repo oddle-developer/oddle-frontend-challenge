@@ -1,13 +1,22 @@
 # Frontend Challenge
-> We will be really appreciated if you are willing to spend more time to finish all bonus tasks.
+> Please take your time and complete the submission steps in 1 week
+
+We will be really appreciated if you are willing to spend more time to finish all bonus tasks.
 
 ## Introduction
 
-You will build a simple GitHub [search console](https://github.com/search) so that users can browse & explore. This website includes following 3 pages 
+You will build a simpler version of GitHub [search console](https://github.com/search) website so that users can browse & explore. This website includes following 3 pages 
 
 1. Search Page `/`: User can type in **username** and show a list of users 
 2. Liked Page `/liked`: User can keep a list of **liked users** for future reference
 3. User Detail Page `/users/:username`: User can know more about an individual user
+
+This challenge is evaluated in following 3 aspects, [User Story](#user-story), [Design Material](#design-materials) and [Technical Requirements](#technical-requirements). 
+
+Each aspect will have **basic** (required for submission) & **bonus** (optional) sections
+
+
+Make sure you fully understand the requirements before proceeding
 
 ---
 
@@ -15,33 +24,33 @@ You will build a simple GitHub [search console](https://github.com/search) so th
 
 ### Basic
 
-- As a user, I can search users based on `username` and view a list of users displaying `username` & `avatar` with pagination
-- As a user, I can like & unlike users while searching & browsing
-- As a user, I can view a list of liked users
-- As a user, I can view a specific user's information, including name, contact info & lists of `repositories`, `followers` & `following`
+1. As a user, I can search users based on `username` and view a list of user cards with pagination
+2. As a user, within the list, I can see `username`, `avatar` image, `followers` count and `following` count on each card
+3. As a user, I can like & unlike users while searching & browsing
+4. As a user, I can view a list of liked users (preserve after refreshing the browsers)
+5. As a user, I can view a specific user's information, including name, contact info, lists of `repositories`, list of `followers` & list of `following` users.
 
 ### Bonus
 
-- As a user, while searching I can know each users' number of repositories, followers & following
-- As a user, I can view & use this website via desktop as well as mobile 
-- As a user, I can copy & paste current website url and it will always show the same contents under the same browser
-- As a user, I can search as I type without manually clicking a search button
+1. As a user, I can view & use this website via desktop as well as mobile 
+2. As a user, I can copy & paste current website url and it will always show the same contents under the same browser
+3. As a user, I can search as I type without manually clicking a search button
 
 ---
 
 ## Design Materials 
-> Feel free to add more designs based on existed layouts & components.
 
-Please create the website following this [design file](https://www.figma.com/file/kt2BetKOPYrbGHhQcHy1SE/Oddle-Fe-Challenge) on figma. 
+ > CSS doesn't have to be pixel perfect, we are cool as long as the ratio doesn't look too different from the mock-up. Feel free to add more designs based on existed layouts & components.
 
-Here we are using [MUI](https://mui.com) for UI mock-ups. 
+### Basic
 
-Note:
+1. Please create the website following this [design file](https://www.figma.com/file/kt2BetKOPYrbGHhQcHy1SE/Oddle-Fe-Challenge) on figma. Here we are using [MUI](https://mui.com) for UI mock-ups. 
 
-- **Dark mode** is optional
-- Avatar background colour is optional; A default or fallback image will be better.
-- Search Page will display pagination tab if needed (we will not enforce Liked Page)
-- CSS doesn't have to be pixel perfect, we are cool as long as the ratio doesn't look too different from the mock-up
+### Bonus
+
+1. A default or fallback image will be better.
+2. Search Page will display pagination tab if needed (we will not enforce Liked Page)
+3. Loading, error, and empty state are properly handled
 
 ---
 
@@ -67,12 +76,19 @@ Note:
 
 ## Submission Steps
 
-1. Submit your assignment by creating a repository on your GitHub account
-2. Code. Commit and Push as many times as you want.
-3. Once ready, create an orphan branch named `submission`. Then create a Pull Request with naming convention `[READY4REVIEW]` in your private repo based on your working branch merging towards `submission`. [reference link](https://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository)
-4. Invite [oddle-developer](https://github.com/oddle-developer) as collaborator & reviewer
-5. Share a public website url deploying the latest version of your application
-6. In your review request description, please add the following information: Full Name, Email Address, How did you know about this job?
+1. Submit your assignment by creating a private repository on your GitHub account
+2. Make sure you have a *small* initial commit e.g. could be this `README.md` file or any framework templates.
+3. Code, commit and push as many times as you want.
+4. Create a branch named `submission` by checking out at the initial commit and continue your work on your working branch. 
+5. When it is ready for review, create a Pull Request with naming convention `[READY4REVIEW]` in your private repository based on your working branch merging towards `submission`.
+6. Invite [oddle-developer](https://github.com/oddle-developer) as collaborator & reviewer to see your changes.
+7. Share a public website url deploying the latest version of your application
+8. In your pull request description, please add the following information: 
+    - Full Name
+    - Email Address
+    - How did you know about this job
+    - Feedback on this assessment
+
 
 ----
 
@@ -81,4 +97,3 @@ Note:
 - [MUI](https://mui.com)
 - GitHub [Search Console](https://github.com/search)
 - GitHub API [docs](https://docs.github.com/en/rest)
-- How to set up an orphan branch: [StackOverflow](https://stackoverflow.com/questions/1384325/in-git-is-there-a-simple-way-of-introducing-an-unrelated-branch-to-a-repository)
