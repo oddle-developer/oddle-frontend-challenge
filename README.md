@@ -76,7 +76,7 @@ Make sure you fully understand the requirements before proceeding
 
 ## Submission Steps
 
-To submit, you are going to create a pull request that contains all the code changes. This pull request points to an empty branch that has @oddle-developer as the reviewer and has the required information (see step no. 8) in the description. For the detailed process, follow our step-by-step instructions: 
+To submit, you are going to create a pull request that contains all the code changes. This pull request points to an empty branch that has [oddle-developer](https://github.com/oddle-developer) as the reviewer and has the required information (see step no. 8) in the description. For the detailed process, follow our step-by-step instructions: 
 
 1. Create a private repository on your GitHub account
 2. Make sure you have a *small* initial commit e.g. could be this `README.md` file or any framework templates.
