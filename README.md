@@ -76,14 +76,14 @@ Make sure you fully understand the requirements before proceeding
 
 ## Submission Steps
 
-To submit, you are going to create a pull request that contains all the code changes. This pull request points to an empty branch that has [oddle-developer](https://github.com/oddle-developer) as the reviewer and has the required information in the description (see step no. 8). For the detailed process, follow our step-by-step instructions: 
+To submit, you are going to create a pull request that contains all the code changes. This pull request points to an empty branch that has [oddle-hire-js](https://github.com/oddle-hire-js) as the reviewer and has the required information in the description (see step no. 8). For the detailed process, follow our step-by-step instructions: 
 
 1. Create a private repository on your GitHub account
 2. Make sure you have a *small* initial commit e.g. could be this `README.md` file or any framework templates.
 3. Code, commit and push as many times as you want.
 4. Create a branch named `submission` by checking out at the initial commit and continue your work on your working branch. 
 5. When it is ready for review, create a Pull Request with naming convention `[READY4REVIEW]` in your private repository based on your working branch merging towards `submission`.
-6. Invite [oddle-developer](https://github.com/oddle-developer) as collaborator & reviewer to see your changes.
+6. Invite [oddle-hire-js](https://github.com/oddle-hire-js) as collaborator & reviewer to see your changes.
 7. Share a public website url deploying the latest version of your application
 8. In your pull request description, please add the following information: 
     - Full Name
