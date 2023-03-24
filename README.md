@@ -1,6 +1,9 @@
 # Frontend Challenge
 > Please take your time and complete the submission steps in 1 week
 
+##Note
+This test has been deprecated as of 20230324. Please refer to [new assignment](https://codesandbox.io/p/sandbox/toggle-button-2ksm9s?file=%2FREADME.md)
+
 We will be really appreciated if you are willing to spend more time to finish all bonus tasks.
 
 ## Introduction
